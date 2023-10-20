@@ -1,5 +1,13 @@
 {
+  "compilerOptions": {
+    "strict": true
+  },
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "one": "deno run lib/one.ts",
+    "t": "deno run ./t.ts"
+  },
+  "lint": {
+    "exclude": ["ignore/"]
   }
 }

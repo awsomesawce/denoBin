@@ -15,6 +15,12 @@ To initialize this project as a Deno project, I used a few commands:
 _I use `pwsh` so my command was `deno completions powershell | Out-File "./_deno.ps1" -encoding utf8`
 4. `gitignore deno >> .gitignore`
 This command fetches a deno gitignore template and dumps it in the `./.gitignore` file.
+_Installable thru `scoop install gitignore`_
+
+## GOALS
+
+- [ ] Get more familiar with **Deno** stdlib.
+- [ ] Incorporate the [Cliffy](https://cliffy.io) module for CLI creation
 
 ## Interesting Deno Modules
 
@@ -26,3 +32,11 @@ _Check [deno.land/x](https://deno.land/x) for a rundown of the most popular Deno
 
 - [Cliffy](https://deno.land/x/cliffy@v1.0.0-rc.3)
 Also check out its GitHub page [here](https://github.com/c4spar/deno-cliffy)
+
+- [rimbu](https://nest.land/package/rimbu)
+Immutable collections for Typescript.
+
+## Other Useful Links
+
+- [typescript](https://typescriptlang.org)
+- [deno docs](https://deno.land)
