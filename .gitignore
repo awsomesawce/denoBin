@@ -18,3 +18,10 @@
 # Ignore copy of denp stdlib modules
 stdlib/*
 
+# ignore bundles generated from `deno bundle`
+_bundles/*
+# Ignore deno completion script because it can always be created using `deno completions powershell`
+_deno.ps1
+
+# experiment dir
+experiment/*
