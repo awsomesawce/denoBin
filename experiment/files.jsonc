@@ -1,0 +1,8 @@
+{
+    "files": [
+        // This directory.
+        "~/denoBin",
+        // Clone of deno stdlib
+        "~/Downloads/deno_std"
+    ]
+}
