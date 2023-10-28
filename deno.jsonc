@@ -16,7 +16,8 @@
   "tasks": {
     "dev": "deno run --watch main.ts",
     "one": "deno run lib/one.ts",
-    "t": "deno run t.ts"
+    "t": "deno run t.ts",
+    "scoopApps": "deno run --allow-env --allow-read ./experiment/getScoopAppDir.ts"
   },
   "lint": {
     "exclude": ["ignore", "_bundles"]

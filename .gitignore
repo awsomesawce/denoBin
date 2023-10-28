@@ -28,3 +28,7 @@ _deno.ps1
 ignore/*
 # Anything with a _doc suffix
 *_doc.json
+
+deno.types.d.ts
+out.txt
+testdir/*
