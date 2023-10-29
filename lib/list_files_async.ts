@@ -13,6 +13,6 @@ export const listFiles = async (pth: string): Promise<void> => {
 
 if (import.meta.main) {
     
-    listFilesAsync(DIRNAME)
-    console.log(Deno.args)
+    listFiles(DIRNAME)
+    //console.log(Deno.args)
 }

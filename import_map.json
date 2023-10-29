@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.204.0/",
+    "lodash": "https://esm.sh/lodash@4.17.21",
+    "io": "https://deno.land/std/io/mod.ts",
+    "path": "https://deno.land/std/path/mod.ts",
+    "rambda": "https://x.nest.land/rambda@7.5.0/mod.ts",
+    "fs": "https://deno.land/std@0.204.0/fs/mod.ts",
+    "which": "https://deno.land/x/which@0.3.0/mod.ts"
+  }
+}
