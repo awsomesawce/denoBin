@@ -14,9 +14,15 @@ export function getPropSymbols(thing:any): symbol[] {
     return Object.getOwnPropertySymbols(thing)
 }
 
+export type ListFilesReturnType = string | Deno.DirEntry[]
+
 export interface ListFilesOptions {
     /** Set if you just want the name and not a DirEntry object */
-    justNames?: boolean
+    justNames?: boolean | undefined,
+    returnType?: ListFilesReturnType,
+
+    /** uses `.join(", ")` to join the retval into a comma-separated string. */
+    joinArray?: boolean | undefined
 }
 
 
@@ -38,8 +44,9 @@ export function listFilesSync (p: string = '.', options: ListFilesOptions = {jus
     } else {
         for (const i of Deno.readDirSync(p)) rv.push(i)
     }
-
-    console.log(rv)
+options.joinArray 
+    ? console.log(rv.join(", "))
+    : console.log(rv)
 }
 
 /** Log the thing using the `toString()` method. */
