@@ -1,5 +1,4 @@
 {
-  // Why is there a parse error?
   // Check https://docs.deno.com/runtime/manual/getting_started/configuration_file for more info
   
   "imports": {
