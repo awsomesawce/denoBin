@@ -3,6 +3,7 @@
   
   "imports": {
     // TODO: Change `std/` key to `$std/`
+    "$std/": "https://deno.land/std@0.206.0/",
     "std/": "https://deno.land/std@0.204.0/",
     "lodash": "https://esm.sh/lodash@4.17.21",
     "io": "https://deno.land/std@0.204.0/io/mod.ts",
@@ -11,7 +12,9 @@
     "fs": "https://deno.land/std@0.204.0/fs/mod.ts",
     "which": "https://deno.land/x/which@0.3.0/mod.ts",
     "fmtColors": "https://deno.land/std@0.204.0/fmt/colors.ts",
-    "json5": "https://esm.sh/json5@2.2.3"
+    "json5": "https://esm.sh/json5@2.2.3",
+    "cliffyFlags": "https://deno.land/x/cliffy@v1.0.0-rc.3/flags/mod.ts",
+    "cliffyColors": "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/colors.ts"
   },
   "compilerOptions": {
     "strict": true,
@@ -22,7 +25,8 @@
     "dev": "deno run --watch main.ts",
     "one": "deno run lib/one.ts",
     "t": "deno run t.ts",
-    "scoopApps": "deno run --allow-env --allow-read ./experiment/getScoopAppDir.ts"
+    "scoopApps": "deno run --allow-env --allow-read ./experiment/getScoopAppDir.ts",
+    "mydoc": "scoop list"
   },
   "lint": {
     "exclude": ["ignore", "_bundles", "testdir"],
