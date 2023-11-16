@@ -41,4 +41,6 @@ Immutable collections for Typescript.
 - [typescript](https://typescriptlang.org)
 - [deno docs](https://deno.land)
 
-_See [IDEAS](./IDEAS.md) for library ideas.
+_See [IDEAS](./IDEAS.md) for library ideas._
+
+_Also check out the [wiki](https://github.com/awsomesawce/denoBin/wiki)_
