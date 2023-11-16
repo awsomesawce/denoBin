@@ -2,13 +2,16 @@
   // Check https://docs.deno.com/runtime/manual/getting_started/configuration_file for more info
   
   "imports": {
+    // TODO: Change `std/` key to `$std/`
     "std/": "https://deno.land/std@0.204.0/",
     "lodash": "https://esm.sh/lodash@4.17.21",
     "io": "https://deno.land/std@0.204.0/io/mod.ts",
     "path": "https://deno.land/std@0.204.0/path/mod.ts",
     "rambda": "https://x.nest.land/rambda@7.5.0/mod.ts",
     "fs": "https://deno.land/std@0.204.0/fs/mod.ts",
-    "which": "https://deno.land/x/which@0.3.0/mod.ts"
+    "which": "https://deno.land/x/which@0.3.0/mod.ts",
+    "fmtColors": "https://deno.land/std@0.204.0/fmt/colors.ts",
+    "json5": "https://esm.sh/json5@2.2.3"
   },
   "compilerOptions": {
     "strict": true,
@@ -31,8 +34,7 @@
   },
   "fmt": {
     "indentWidth": 4,
-    "lineWidth": 100,
-    "semiColons": true
+    "lineWidth": 100
   }
   //"importMap": "import_map.json"
 }
