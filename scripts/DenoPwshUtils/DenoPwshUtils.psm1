@@ -21,13 +21,15 @@ function Get-DenoDoc {
     <#
     .SYNOPSIS
     `deno doc` shortcut
+    .DESCRIPTION
+    Shortcut for `deno doc` command.
     #>
     [CmdletBinding()]
     param (
         [Parameter()]
         [string]
         $Term,
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory=$false, HelpMessage='Name of std module to look up')]
         [string]
         [ValidateSet("archive", "assert", "async", "bytes", "collections", 
         "console", "crypto", "csv", "datetime", "dotenv", "encoding", 
@@ -40,7 +42,8 @@ function Get-DenoDoc {
         [switch]
         $Page
     )
-    $Url = "https://deno.land/std@0.204.0/"
+    $Script:stdVersion = "0.217.0"
+    $Url = "https://deno.land/std@${stdVersion}/"
     if (!($null -eq $ModuleName)) {
         if ($Page) {
             deno doc "${Url}$ModuleName/mod.ts" | less -r
@@ -49,6 +52,7 @@ function Get-DenoDoc {
     }
 
 }
+
 
 
 Export-ModuleMember -Function @("Print-Deno", "Get-DenoDoc")
